@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXERCICIO CURSO</title>
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <style >
+		.card{
+			margin: 100px auto;
+			width: 50%;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.button{
+			margin-top: 14px;
+		}
+		html{
+			background-color: hsl(0, 0%, 86%);
+		}
+		.card-message{
+			margin-top: 20px;
+		}
+		.control-centered{
+			display: flex;
+			justify-content: center;
+		}
+		.para{
+			margin-top:6px;
+		}
+	</style>
+	<script src='app_2.js'></script>
+</head>
+<body>
+
+<div class='card has-background-grey-dark'>
+
+		<div class='card-content'>
+			<h1 class='text-center has-text-white'>FORMULÁRIO</h1>
+			<div class='field'>
+				<label class='label has-text-white-bis'>NUMERO DA RESIDENCIA</label>
+				<div class='control'>
+					<input class='input' type='text' placeholder="RESIDENCIA" name='casa'>
+				</div>
+				<label class='label has-text-white-bis'>BAIRRO</label>
+				<div class='control'>
+					<input class='input' type="text" placeholder="BAIRRO" name='bairro'>
+				</div>
+				<label class='label has-text-white-bis'>CIDADE</label>
+				<div class='control'>
+					<input class='input' type="text" name="cidade" placeholder="CIDADE">
+				</div>
+
+				<label class='label has-text-white-bis'>AREA DA CASA</label>
+				<div class='control'>
+					<input class='input' type="text" name="area_casa" placeholder="CASA">
+				</div>
+					<article class='message'>
+						<div class='message-header control-centered card-message'>
+							<h4 class='has-text-danger-light'>DADOS DO FORMULÁRIO</h4>
+						</div>
+						<div class="message-body has-background-info">
+						</div>
+					</article>
+				<div class='control control-centered'>		
+					<button  onclick='adicionar_LISTA()'type='submit' class='button has-background-primary'>ADICIONAR</button>
+				</div>
+				<div class='control control-centered'>
+					<button  onclick='remover_LISTA()'type='submit' class='button has-background-primary'>REMOVER</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
